@@ -216,7 +216,7 @@ li {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-  @media (max-width: 1370px) {
+  @media (max-width: 1240px) {
     .main__content {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
@@ -228,16 +228,21 @@ li {
   -ms-flex-preferred-size: 60%;
   flex-basis: 60%;
   padding: 7rem 0; }
-  @media (max-width: 1370px) {
+  @media (max-width: 1470px) {
     .stories {
-      -webkit-flex-basis: 65%;
-      -ms-flex-preferred-size: 65%;
-      flex-basis: 65%; } }
-  @media (max-width: 1370px) {
+      -webkit-flex-basis: 66%;
+      -ms-flex-preferred-size: 66%;
+      flex-basis: 66%; } }
+  @media (max-width: 1240px) {
     .stories {
       -webkit-flex-basis: 95%;
       -ms-flex-preferred-size: 95%;
       flex-basis: 95%; } }
+  @media (max-width: 1100px) {
+    .stories {
+      -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; } }
   .stories__content {
     padding: 6rem 0;
     display: -webkit-box;
@@ -361,7 +366,7 @@ li {
     font-weight: 700; }
     @media (max-width: 1600px) {
       .menu__name {
-        font-size: 2rem; } }
+        font-size: 1.8rem; } }
     @media (max-width: 900px) {
       .menu__name {
         font-size: 1.8rem; } }
@@ -525,12 +530,12 @@ li {
   -ms-flex-preferred-size: 37%;
   flex-basis: 37%;
   padding: 8rem 0; }
-  @media (max-width: 1370px) {
+  @media (max-width: 1470px) {
     .sidebar {
-      -webkit-flex-basis: 33%;
-      -ms-flex-preferred-size: 33%;
-      flex-basis: 33%; } }
-  @media (max-width: 1370px) {
+      -webkit-flex-basis: 32%;
+      -ms-flex-preferred-size: 32%;
+      flex-basis: 32%; } }
+  @media (max-width: 1240px) {
     .sidebar {
       -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
@@ -677,7 +682,7 @@ li {
   width: 100%;
   margin: 3rem 0;
   padding: 3rem; }
-  @media (max-width: 740px) {
+  @media (max-width: 1370px) {
     .popular {
       padding: 1rem; } }
   .popular__h3 {
@@ -726,7 +731,7 @@ li {
         @media (max-width: 1370px) {
           .popular__content .card:first-child {
             margin-top: 2rem; } }
-      @media (max-width: 1370px) {
+      @media (max-width: 1240px) {
         .popular__content .card {
           -webkit-flex-basis: 49%;
           -ms-flex-preferred-size: 49%;
