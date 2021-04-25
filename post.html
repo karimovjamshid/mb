@@ -22,7 +22,18 @@
                     <img src="img/icons/logo.png" width="100" alt="">
                 </a>
                 <div class="header__input">
-                    <img src="img/icons/heeader-input.png" width="60" alt="">
+                    <label>
+                        <input class="switch" type="checkbox" name="theme">
+                        <span class="switch-checkbox">
+                            <div class="circle-icon">
+                                <img src="img/icons/sun.png" width="20" alt="">
+                            </div>
+                            <div class="circle-icon2">
+                                <img src="img/icons/moon.png" width="20" alt="">
+                            </div>
+
+                        </span>
+                    </label>
                 </div>
             </div>
         </div>
@@ -235,7 +246,15 @@
         </div>
     </footer>
 
+    <script>
+        // Remove subscribe form
+        const closeBtn = document.querySelector('.subscribe-input__close'),
+            subscribeInput = document.querySelector('.subscribe-input');
 
+        closeBtn.addEventListener('click', function () {
+            subscribeInput.classList.remove('active');
+        })
+    </script>
     <script src="js/main.js"></script>
 </body>
 

@@ -1,9 +1,26 @@
+// Dark mode
 
-// Remove subscribe form
+const checkbox = document.querySelector('input[name=theme]');
 
-const closeBtn = document.querySelector('.subscribe-input__close'),
-    subscribeInput = document.querySelector('.subscribe-input');
-
-closeBtn.addEventListener('click', function () {
-    subscribeInput.classList.remove('active');
+checkbox.addEventListener('change', function() {
+    if(this.checked) {
+        trans()
+        document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+        trans()
+        document.documentElement.setAttribute('data-theme', 'light')
+    }
 })
+
+let trans = () => {
+    document.documentElement.classList.add('transition');
+    window.setTimeout(() => {
+        document.documentElement.classList.remove('transition')
+    }, 500)
+}
+
+jQuery(document).ready(function ($) {
+
+    
+    
+});

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,18 @@
                     <img src="img/icons/logo.png" width="100" alt="">
                 </a>
                 <div class="header__input">
-                    <img src="img/icons/heeader-input.png" width="60" alt="">
+                    <label>
+                        <input class="switch" type="checkbox" name="theme">
+                        <span class="switch-checkbox">
+                            <div class="circle-icon">
+                                <img src="img/icons/sun.png" width="20" alt="">
+                            </div>
+                            <div class="circle-icon2">
+                                <img src="img/icons/moon.png" width="20" alt="">
+                            </div>
+
+                        </span>
+                    </label>
                 </div>
             </div>
         </div>
@@ -365,26 +376,33 @@
                     <div class="review">
                         <h3 class="review__h3">what readers think</h3>
                         <div class="review__slider">
-                            <div class="review__slide">
-                                <div class="review__photo">
-                                    <img src="img/main/person-1.png" alt="">
-                                </div>
-                                <div class="review__quote">
-                                    <div class="review__quotemark">
-                                        <img src="img/icons/quote-mark.png" width="60" alt="">
+                            <div class="review__wrapper">
+                                <div class="review__slide">
+                                    <div class="review__photo">
+                                        <img src="img/main/person-1.png" alt="">
                                     </div>
-                                    <div class="review__text">
-                                        money in bitcoins makes it easy for me to understand the in and out on how
-                                        crypto works. Good Job
-                                    </div>
+                                    <div class="review__quote">
+                                        <div class="review__quotemark">
+                                            <img src="img/icons/quote-mark.png" width="60" alt="">
+                                        </div>
+                                        <div class="review__text">
+                                            money in bitcoins makes it easy for me to understand the in and out on
+                                            how
+                                            crypto works. Good Job
+                                        </div>
 
 
+                                    </div>
                                 </div>
                             </div>
+
+
+
+
                         </div>
                         <footer class="review__footer">
                             <div class="review__next">
-                                <span>nex review</span>
+                                <span>next review</span>
                                 <div class="review__icon">
                                     <img src="img/icons/double-arrow.png" alt="">
                                 </div>
@@ -513,8 +531,9 @@
         </div>
     </footer>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
