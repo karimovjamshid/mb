@@ -106,11 +106,11 @@ li {
     }
 
     @media(max-width: $laptop-xl) {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
-    @media(max-width: $laptop) {
-        font-size: 1.6rem;
+    @media(max-width: $laptop-lg) {
+        font-size: 1.4rem;
     }
 }
 
@@ -122,11 +122,11 @@ li {
     color: var(--color-heading);
 
     @media(max-width: $laptop-xl) {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     @media(max-width: $laptop-lg) {
-        font-size: 3.2rem;
+        font-size: 2.6rem;
     }
 
     @media(max-width: $mobile-lg) {
@@ -149,12 +149,13 @@ li {
     display: block;
 
     @media(max-width: $laptop-xl) {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     @media(max-width: $laptop-lg) {
-        font-size: 3.2rem;
+        font-size: 2.6rem;
     }
+
 
     @media(max-width: $mobile-lg) {
         font-size: 2.8rem;
@@ -173,8 +174,8 @@ li {
         background-color: rgba(45, 128, 32, 0.4);
         margin: 1rem auto;
 
-        @media(max-width: $laptop-lg) {
-            height: 12px;
+        @media(max-width: $laptop-xl) {
+            height: 10px;
         }
     }
 }
@@ -194,8 +195,9 @@ li {
     color: var(--color-white);
     border-radius: .3em;
 
-    @media(max-width: $laptop) {
-        font-size: 1.8rem;
+    @media(max-width: $laptop-xl) {
+        font-size: 1.4rem;
+        padding: .7rem 2rem;
     }
 
     @media(max-width: $mobile-xs) {
@@ -243,7 +245,15 @@ li {
     width: 100%;
 
     @media(max-width: $laptop-lg) {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+
+    @media(max-width: $laptop-lg) {
+        font-size: 1.4rem;
+    }
+
+    @media(max-width: $tablet) {
+        font-size: 1.3rem;
     }
 
     &:focus {

@@ -75,7 +75,7 @@
         color: var(--color-heading);
 
         @media(max-width: $laptop-xl) {
-            font-size: 4rem;
+            font-size: 3.2rem;
         }
 
         @media(max-width: $tablet) {
@@ -105,6 +105,10 @@
     align-items: center;
     flex-wrap: wrap;
     border: 4px solid #B4CCE5;
+
+    @media(max-width: $laptop-xl) {
+        padding: .7rem 1rem;
+    }
 
     @media(max-width: $mobile-lg) {
         justify-content: center;
@@ -143,21 +147,17 @@
 
     &__name {
         color: #fff;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         text-transform: capitalize;
         margin: 0 1rem;
         font-weight: 700;
 
         @media(max-width: $laptop-xl) {
-            font-size: 1.8rem;
-        }
-
-        @media(max-width: $tablet) {
-            font-size: 1.8rem;
-        }
-
-        @media(max-width: $mobile) {
             font-size: 1.6rem;
+        }
+
+        @media(max-width: $laptop-lg) {
+            font-size: 1.4rem;
         }
     }
 
@@ -228,8 +228,8 @@
         color: var(--color-white);
         text-transform: uppercase;
 
-        @media(max-width: $laptop-lg) {
-            font-size: 1.6rem;
+        @media(max-width: $laptop-xl) {
+            font-size: 1.4rem;
         }
     }
 
@@ -240,14 +240,10 @@
         margin: 5rem 0;
 
         @media(max-width: $laptop-xl) {
-            font-size: 2.4rem;
-        }
-
-        @media(max-width: $laptop-lg) {
             font-size: 2rem;
         }
 
-        @media(max-width: $mobile-xs) {
+        @media(max-width: $laptop-lg) {
             font-size: 1.8rem;
         }
     }
@@ -260,7 +256,7 @@
         font-style: normal;
         font-weight: 600;
 
-        @media(max-width: $laptop-lg) {
+        @media(max-width: $laptop-xl) {
             font-size: 1.4rem;
         }
     }
@@ -273,7 +269,7 @@
         font-size: 1.8rem;
 
         @media(max-width: $laptop-lg) {
-            font-size: 1.6rem;
+            font-size: 1.3rem;
         }
 
         @media(max-width: $mobile-xs) {
@@ -326,6 +322,14 @@
         font-weight: 800;
         text-transform: uppercase;
 
+        @media(max-width: $laptop-xl) {
+            font-size: 3rem;
+        }
+
+        @media(max-width: $laptop-lg) {
+            font-size: 2.6rem;
+        }
+
         @media(max-width: $tablet) {
             font-size: 2.4rem;
         }
@@ -339,7 +343,7 @@
         margin: 2rem 0;
 
         @media(max-width: $laptop-xl) {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
 
         @media(max-width: $tablet) {
@@ -396,15 +400,15 @@
         color: var(--color-heading);
 
         @media(max-width: $laptop-xl) {
-            font-size: 3.2rem;
+            font-size: 3rem;
         }
 
         @media(max-width: $laptop-lg) {
-            font-size: 2.8rem;
+            font-size: 2.6rem;
         }
 
-        @media(max-width: $tablet) {
-            font-size: 2.4rem;
+        @media(max-width: $laptop) {
+            font-size: 2.2rem;
         }
     }
 
@@ -448,15 +452,7 @@
         color: var(--color-text-dark);
 
         @media(max-width: $laptop-xl) {
-            font-size: 2rem;
-        }
-
-        @media(max-width: $laptop-lg) {
-            font-size: 1.8rem;
-        }
-
-        @media(max-width: $mobile-xs) {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
     }
 
@@ -502,15 +498,15 @@
         text-transform: uppercase;
 
         @media(max-width: $laptop-xl) {
-            font-size: 3.2rem;
+            font-size: 3rem;
         }
 
         @media(max-width: $laptop-lg) {
-            font-size: 2.8rem;
+            font-size: 2.6rem;
         }
 
-        @media(max-width: $tablet) {
-            font-size: 2.4rem;
+        @media(max-width: $laptop) {
+            font-size: 2.2rem;
         }
     }
 
@@ -529,6 +525,14 @@
         font-size: 2rem;
         line-height: 1.7;
         color: var(--color-gray);
+
+        @media(max-width: $laptop-xl) {
+            font-size: 1.8rem;
+        }
+
+        @media(max-width: $laptop-lg) {
+            font-size: 1.6rem;
+        }
     }
 
 
@@ -556,15 +560,15 @@
         display: block;
 
         @media(max-width: $laptop-xl) {
-            font-size: 3.2rem;
+            font-size: 3rem;
         }
 
         @media(max-width: $laptop-lg) {
-            font-size: 2.8rem;
+            font-size: 2.6rem;
         }
 
-        @media(max-width: $tablet) {
-            font-size: 2.4rem;
+        @media(max-width: $laptop) {
+            font-size: 2.2rem;
         }
     }
 
@@ -611,6 +615,9 @@
     border-radius: .5rem;
     display: none;
 
+    @media(max-width: $laptop-lg) {
+        padding: 1rem;
+    }
 
 
     &.active {
@@ -630,7 +637,11 @@
         color: var(--color-heading);
         font-weight: 600;
 
-        @media(max-width: $laptop-sm) {
+        @media(max-width: $laptop-xl) {
+            font-size: 2rem;
+        }
+
+        @media(max-width: $laptop-lg) {
             font-size: 1.8rem;
         }
 
@@ -710,8 +721,12 @@
             font-size: 3.2rem;
         }
 
-        @media(max-width: $mobile-lg) {
+        @media(max-width: $laptop-lg) {
             font-size: 2.8rem;
+        }
+
+        @media(max-width: $mobile-lg) {
+            font-size: 2.6rem;
         }
 
         @media(max-width: $mobile) {
@@ -730,17 +745,21 @@
     }
 
     &__item {
-        font-size: 2.2rem;
+        font-size: 2rem;
         margin-top: 3rem;
         line-height: 1.5;
         color: var(--color-text-dark);
 
         @media(max-width: $laptop-xl) {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
+        }
+
+        @media(max-width: $laptop-lg) {
+            font-size: 1.4rem;
         }
 
         @media(max-width: $mobile) {
-            font-size: 1.6rem;
+            margin-top: 2rem;
         }
 
         &::before {
