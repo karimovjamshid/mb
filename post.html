@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="top">
 
     <!-- ============= Header ============= -->
     <header class="header">
@@ -39,7 +39,7 @@
         </div>
     </header>
 
-    <main class="container-sm">
+    <main class="main container-sm">
         <form action="" class="subscribe-input active">
             <div class="subscribe-input__content">
                 <div class="subscribe-input__title">Get new guides early</div>
@@ -245,7 +245,9 @@
             </div>
         </div>
     </footer>
-
+    <div class="toTop container" id="toTop" data-scroll=".top">
+        <img src="img/icons/up.svg" height="90" alt="">
+    </div>
     <script>
         // Remove subscribe form
         const closeBtn = document.querySelector('.subscribe-input__close'),
@@ -255,6 +257,7 @@
             subscribeInput.classList.remove('active');
         })
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
