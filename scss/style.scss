@@ -22,7 +22,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
 
-        @media(max-width: 1240px) {
+        @media(max-width: $laptop-sm) {
             justify-content: center;
         }
     }
@@ -30,15 +30,11 @@
 
 
 .stories {
-    flex-basis: 60%;
+    flex-basis: 70%;
     padding: 7rem 0;
 
-    @media(max-width: $laptop-lg) {
-        flex-basis: 66%;
-    }
-
-    @media(max-width: 1240px) {
-        flex-basis: 95%;
+    @media(max-width: 1250px) {
+        flex-basis: 65%;
     }
 
     @media(max-width: $laptop-sm) {
@@ -60,7 +56,7 @@
 
             @media(max-width: $tablet) {
                 flex-basis: 100%;
-
+                max-width: 700px;
             }
         }
     }
@@ -302,8 +298,8 @@
     padding: 4rem;
     margin: 8rem 0;
 
-    @media(max-width: $laptop) {
-        max-width: 800px;
+    @media(max-width: $laptop-sm) {
+        max-width: 700px;
         margin: 4rem auto;
     }
 
@@ -361,15 +357,17 @@
 
 
 .sidebar {
-    flex-basis: 37%;
+    flex-basis: 28%;
     padding: 8rem 0;
 
-    @media(max-width: $laptop-lg) {
-        flex-basis: 32%;
+
+    @media(max-width: 1250px) {
+        flex-basis: 34%;
     }
 
-    @media(max-width: 1240px) {
+    @media(max-width: $laptop-sm) {
         flex-basis: 100%;
+        padding: 0 0 4rem 0;
     }
 
     @media(max-width: $tablet) {
@@ -384,9 +382,9 @@
     padding: 2rem 3rem;
     border-radius: 2rem;
     box-sizing: border-box;
-    max-width: 800px;
+    max-width: 700px;
     width: 100%;
-    margin: 0 auto;
+    margin: 2rem auto;
 
 
     &__h3 {
@@ -425,8 +423,8 @@
 
 
     &__photo {
-        max-width: 250px;
-        max-height: 250px;
+        max-width: 180px;
+        max-height: 180px;
         border-radius: 50%;
         overflow: hidden;
         border: 1px solid var(--color-white);
@@ -489,7 +487,7 @@
     background-color: var(--bg-panel-alt);
     padding: 3rem;
     margin: 3rem auto;
-    max-width: 800px;
+    max-width: 600px;
 
     &__h3 {
         font-size: 5rem;
@@ -547,7 +545,7 @@
     margin: 3rem 0;
     padding: 3rem;
 
-    @media(max-width: $laptop) {
+    @media(max-width: $laptop-lg) {
         padding: 1rem;
     }
 
@@ -569,6 +567,11 @@
 
         @media(max-width: $laptop) {
             font-size: 2.2rem;
+        }
+
+        @media(max-width: $tablet) {
+            max-width: 700px;
+            margin: 0 auto 2rem;
         }
     }
 
@@ -596,12 +599,17 @@
                 }
             }
 
-            @media(max-width: 1240px) {
+            @media(max-width: $laptop-sm) {
                 flex-basis: 49%;
+            }
+
+            @media(max-width: 1300px) {
+                padding: 1rem;
             }
 
             @media(max-width: $tablet) {
                 flex-basis: 100%;
+                max-width: 700px;
             }
         }
     }
