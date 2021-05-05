@@ -134,6 +134,15 @@
         }
     }
 
+    &__item {
+        position: relative;
+
+        &:hover .submenu {
+            opacity: 1;
+            z-index: 2;
+        }
+    }
+
     &__group {
         display: flex;
         justify-content: space-between;
@@ -181,6 +190,37 @@
             @media(max-width: $mobile-lg) {
                 width: 100%;
             }
+        }
+    }
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: lighten(#0E2439, 10%);
+    width: 100%;
+    padding: 1rem;
+    opacity: 0;
+    z-index: -1;
+    transition: all .3s linear;
+    border: 2px solid #B4CCE5;
+
+
+    &__item {
+        color: var(--color-white);
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1.4rem;
+        transition: color .3s ease;
+
+        &:hover {
+            color: var(--color-orange);
+            cursor: pointer;
+        }
+
+        &:first-child {
+            margin-top: 0;
         }
     }
 }

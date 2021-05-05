@@ -293,8 +293,8 @@ span:active::after {
 .toTop {
   display: inline-block;
   position: fixed;
-  bottom: 8rem;
-  right: 4rem;
+  bottom: 2rem;
+  right: 2rem;
   transition: opacity .5s linear;
   opacity: 0;
   z-index: -1;
@@ -302,10 +302,6 @@ span:active::after {
   display: flex;
   justify-content: center;
   align-items: center; }
-  @media (max-width: 550px) {
-    .toTop {
-      bottom: 4rem;
-      right: 2rem; } }
   @media (max-width: 550px) {
     .toTop img {
       width: 60px; } }
@@ -480,6 +476,11 @@ span:active::after {
         -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%; } }
+  .menu__item {
+    position: relative; }
+    .menu__item:hover .submenu {
+      opacity: 1;
+      z-index: 2; }
   .menu__group {
     display: -webkit-box;
     display: -webkit-flex;
@@ -524,6 +525,33 @@ span:active::after {
     @media (max-width: 740px) {
       .menu__btn button {
         width: 100%; } }
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #183e62;
+  width: 100%;
+  padding: 1rem;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  border: 2px solid #B4CCE5; }
+  .submenu__item {
+    color: var(--color-white);
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease; }
+    .submenu__item:hover {
+      color: var(--color-orange);
+      cursor: pointer; }
+    .submenu__item:first-child {
+      margin-top: 0; }
 
 .card {
   border-radius: 1.6rem;
